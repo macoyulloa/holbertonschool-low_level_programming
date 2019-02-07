@@ -11,11 +11,16 @@
 int main(void)
 {
 	int n;
+	char c;
 
-	for (n = 0; n < 16; n++)
+	for (n = 0; n <= 9; n++)
 	{
-	printf("%x", n);
+		putchar(n + '0');
 	}
-	printf("\n");
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);	
+	}
+	putchar('\n');
 	return (0);
 }
