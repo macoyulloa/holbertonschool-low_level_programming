@@ -16,7 +16,7 @@ int main(void)
 	{
 		p = n / 10;
 		s = n % 10;
-		if (p<s)
+		if (p < s)
 		{
 			putchar(p + '0');
 			putchar(s + '0');
