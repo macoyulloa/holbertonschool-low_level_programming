@@ -12,7 +12,7 @@ int main(void)
 {
 	int n, num, segDig, primDig, terDig;
 
-	for (n = 0; n < 800; n++)
+	for (n = 10; n < 800; n++)
 	{
 		num = n / 10;
 		segDig = num % 10;
