@@ -10,24 +10,29 @@
  */
 int main(void)
 {
-	int n, num, segDig, primDig, terDig;
+	int n, o, p;
 
-	for (n = 10; n < 800; n++)
+	for (n = '0'; n <= '7'; n++)
 	{
-		num = n / 10;
-		segDig = num % 10;
-		primDig = n / 100;
-		terDig = n % 10;
-		if (segDig < terDig)
+		for (o = '1'; o <= '9'; o++)
 		{
-			putchar(primDig + '0');
-			putchar(segDig + '0');
-			putchar(terDig + '0');
-			if (n < 789)
+			for (p = '2'; p <= '9'; p++)
 			{
-				putchar(',');
-				putchar(' ');
-			}
+				if (n < o && o < p)
+				{
+					putchar(n);
+					putchar(o);
+					putchar(p);
+					if (n == '7' && o == '8' && p == '9')
+					{
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}	
 		}
 	}
 	putchar('\n');
