@@ -27,14 +27,11 @@ int main(void)
 						putchar(' ');
 						putchar(p);
 						putchar(q);
-						if (n == '9' && o == '8' && p == '9' && q == '9')
-						{
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						if (n != '9' && o != '8' && q != '9')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 			}
