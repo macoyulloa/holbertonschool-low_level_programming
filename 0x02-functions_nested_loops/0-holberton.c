@@ -7,7 +7,7 @@
  * section header: Section description)
  *
  * Return: always 0
- */ 
+ */
 int main(void)
 {
 	_putchar('H');
