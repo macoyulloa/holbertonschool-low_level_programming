@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - funtion main of the indicated point
- * @c: The character to print
+ * jack_bauer - funtion main of the indicated point
  *
  * Return: always return 0.
  */
@@ -10,11 +9,11 @@ void jack_bauer(void)
 {
 	int p, s, t, c;
 
-	for (p = 0; p <= 2; p++)
+	for (p = 0; p < 3; p++)
 	{
-		for (s = 0; s <= 3; s++)
+		for (s = 0; s < 4; s++)
 		{
-			for (t = 0; t <= 5; t++)
+			for (t = 0; t < 6; t++)
 			{
 				for (c = 0; c <= 9; c++)
 				{

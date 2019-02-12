@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - funtion main of the indicated point
- * @c: The character to print
+ * print_last_digit - funtion main of the indicated point
+ * @n: The character to print
  *
  * Return: always return 0.
  */

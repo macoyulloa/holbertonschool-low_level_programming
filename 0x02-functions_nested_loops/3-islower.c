@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - funtion main of the indicated point
+ *  _islower - funtion main of the indicated point
  * @c: The character to print
  *
  * Return: always return 0.

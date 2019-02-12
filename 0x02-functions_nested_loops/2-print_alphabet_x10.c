@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - funtion main of the indicated point
- * @c: The character to print
+ * print_alphabet_x10 - funtion main of the indicated point
  *
  * Return: always return 0.
  */

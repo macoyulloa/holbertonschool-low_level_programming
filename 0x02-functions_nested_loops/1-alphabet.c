@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - funtion main of the indicated point
- * @c: The character to print
+ * print_alphabet - funtion main of the indicated point
  *
- * Return: always return 0.
- * description excercise 1
+ * Description - Lilphabet description of the function
+ *
+ * Return: Description of the returned value
  */
 void print_alphabet(void)
 {
