@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_sign - funtion main of the indicated point
- * @n: is the input
- *
+ * add - funtion main of the indicated point
+ * @a: is the input
+ * @b: is the input
  * Return: always return 0.
  */
 int add(int a, int b)
