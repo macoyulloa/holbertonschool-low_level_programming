@@ -2,14 +2,13 @@
 
 /**
  * times_table - funtion main of the indicated point
- * @a: The character to print
  *
  * Return: always return 0.
  */
 void times_table(void)
 {
 	int b, i, t;
-	
+
 	for (b = 0 ; b <= 9 ; b++)
 	{
 		for (i = 0 ; i <= 9 ; i++)
@@ -22,7 +21,7 @@ void times_table(void)
 				_putchar(t + '0');
 				_putchar(',');
 			}
-			else 
+			else
 			{
 				_putchar(' ');
 				_putchar(t / 10 + '0');
