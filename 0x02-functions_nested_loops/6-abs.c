@@ -5,15 +5,16 @@
  * @c: The character to print
  *
  * Return: always return 0.
- * description excercise 1
  */
-void print_alphabet(void)
+int _abs(int n)
 {
-	char l;
-
-	for (l = 'a' ; l <= 'z' ; l++)
+	if (n >= 0)
 	{
-		_putchar(l);
+		return (n);
 	}
-	_putchar('\n');
+	else
+	{
+		n = n * -1;
+		return (n);
+	}
 }

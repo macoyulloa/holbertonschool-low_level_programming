@@ -5,15 +5,20 @@
  * @c: The character to print
  *
  * Return: always return 0.
- * description excercise 1
  */
-void print_alphabet(void)
+int _isalpha(int c)
 {
-	char l;
-
-	for (l = 'a' ; l <= 'z' ; l++)
+	if (c > 'a' && c < 'z')
 	{
-		_putchar(l);
+		return (1);
+	}
+	if (c > 'A' && c < 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 	_putchar('\n');
 }

@@ -1,12 +1,22 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - funtion main of the indicated point
+ * @c: The character to print
  *
- * Return: Always 0.
+ * Return: always return 0.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	return (0);
+	int cont = 1;
+	char l;
+
+	for (cont = 1 ; cont <= 10 ; cont++)
+	{
+		for (l = 'a' ; l <= 'z' ; l++)
+		{
+			_putchar(l);
+		}
+		_putchar('\n');
+	}
 }
