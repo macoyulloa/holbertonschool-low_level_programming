@@ -1,13 +1,13 @@
 #include "holberton.h"
 
 /**
- * times_table - funtion main of the indicated point
- *
+ * print_times_table - funtion main of the indicated point
+ * @n: input
  * Return: always return 0.
  */
 void print_times_table(int n)
 {
-	int b, i, t;
+	int b, i, t, k;
 
 	if (n > 0 && n < 15)
 	{
@@ -18,12 +18,8 @@ void print_times_table(int n)
 				t = i * b;
 				if (t <= 9)
 				{
-					if (i > 0)
-					{
+					for (k = 0 ; (i > 0) && (k < 3) ; k++)
 						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-					}
 					_putchar(t + '0');
 					if (i != n)
 						_putchar(',');
@@ -37,7 +33,7 @@ void print_times_table(int n)
 					if (i != n)
 						_putchar(',');
 				}
-                                else
+				else
 				{
 					_putchar(' ');
 					_putchar(t / 100 + '0');
@@ -48,6 +44,5 @@ void print_times_table(int n)
 				}
 			}
 			_putchar('\n');
-		}
-	}
+	}	}
 }
