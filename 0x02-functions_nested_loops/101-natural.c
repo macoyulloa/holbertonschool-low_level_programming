@@ -15,9 +15,9 @@ int main(void)
 		n = n + b;
 		if (b % 3 == 0 || b % 5 == 0)
 		{
-			printf("%d ", n);
+			n = n + b;
 		}
 	}
-	printf("\n");
+	printf("%d\n", n);
 	return (0);
 }
