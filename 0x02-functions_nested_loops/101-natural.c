@@ -12,11 +12,8 @@ int main(void)
 
 	for (b = 1 ; b < 1024 ; b++)
 	{
-		n = n + b;
 		if (b % 3 == 0 || b % 5 == 0)
-		{
 			n = n + b;
-		}
 	}
 	printf("%d\n", n);
 	return (0);
