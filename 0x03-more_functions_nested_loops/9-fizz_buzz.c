@@ -25,6 +25,10 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
+		else if (d == 100)
+		{
+			printf("%d", d);
+		}
 		else
 		{
 			printf("%d ", d);
