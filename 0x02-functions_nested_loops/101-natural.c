@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * times_table - funtion main of the indicated point
+ * main - funtion main of the indicated point
  *
  * Return: always return 0.
  */
@@ -13,11 +13,11 @@ int main(void)
 	for (b = 1 ; b < 1024 ; b++)
 	{
 		n = n + b;
-		if (n%3 == 0 || n%5 == 0)
+		if (n % 3 == 0 || n % 5 == 0)
 		{
 			printf("%d ", n);
 		}
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
