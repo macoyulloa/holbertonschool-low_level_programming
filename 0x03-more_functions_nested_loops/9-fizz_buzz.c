@@ -21,13 +21,13 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
+		else if (d == 100)
+		{
+			printf("Buzz");
+		}
 		else if (d % 5 == 0)
 		{
 			printf("Buzz ");
-		}
-		else if (d == 100)
-		{
-			printf("%d", d);
 		}
 		else
 		{
