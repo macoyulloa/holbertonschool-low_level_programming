@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * _puts - code for Holberton School students.
@@ -14,5 +13,5 @@ void _puts(char *str)
 	{
 		_putchar(str[i]);
 	}
-	putchar ('\n');
+	_putchar ('\n');
 }
