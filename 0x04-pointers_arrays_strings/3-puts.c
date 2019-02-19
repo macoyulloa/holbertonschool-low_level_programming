@@ -2,7 +2,7 @@
 
 /**
  * _puts - code for Holberton School students.
- * @s: pointer
+ * @str: pointer
  * Return: Always 0.
  */
 void _puts(char *str)
