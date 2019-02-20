@@ -12,16 +12,16 @@ void puts_half(char *str)
 	for (length = 0; str[length] != '\0'; length++)
 	{
 	}
-	if (str[length] % 2 != 0)
+	if (str[length] % 2 == 0)
 	{
-		for (n = ((length + 1) / 2); str[n] != '\0'; n++)
+		for (n = ((length) / 2); str[n] != '\0'; n++)
 		{
 			_putchar(str[n]);
 		}
 	}
 	else
 	{
-		for (n = (length / 2); str[n] != '\0'; n++)
+		for (n = ((length + 1) / 2); str[n] != '\0'; n++)
 		{
 			_putchar(str[n]);
 		}
