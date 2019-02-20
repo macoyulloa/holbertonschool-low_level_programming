@@ -9,4 +9,17 @@
  */
 char *_strcpy(char *dest, char *src)
 {
+	char *destino;
+	char *fuente;
+
+	destino = dest;
+	fuente = src;
+	while (*fuente != '\0')
+	{
+		*destino = *fuente;
+		fuente++;
+		destino++;
+	}
+	*destino = *fuente;
+	return (dest);
 }
