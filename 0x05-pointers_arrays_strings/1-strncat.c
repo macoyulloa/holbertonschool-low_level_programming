@@ -23,7 +23,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		destino[j + i] = fuente[i];
 	}
-	for (; i < n; i++)
-	*destino = '\0';
+	destino[j + i] = fuente[i];
 	return (dest);
 }
