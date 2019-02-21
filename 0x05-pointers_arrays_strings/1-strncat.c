@@ -21,9 +21,9 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (i = 0; fuente[i] != '\0' && i < n; i++)
 	{
-			*destino = *fuente;
-			destino++;
-			fuente++;
+		*destino = *fuente;
+		destino++;
+		fuente++;
 	}
 	*destino = '\0';
 	return (dest);
