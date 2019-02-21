@@ -12,20 +12,18 @@ char *_strncat(char *dest, char *src, int n)
 {
 	char *destino;
 	char *fuente;
-	int i;
+	int i, j;
 
 	destino = dest;
 	fuente = src;
-	for (; *destino != '\0'; destino++)
+	for (j = 0; destino[j] != '\0'; j++)
 	{
 	}
-	for (i = 0; fuente[i] != '\0' && i < n; i++)
+	for (i = 0; i < n && fuente[i] != '\0'; i++)
 	{
-		*destino = *fuente;
-		destino++;
-		fuente++;
+		destino[j + i] = fuente[i];
 	}
-	if (i < n)
+	for (; i < n; i++)
 	*destino = '\0';
 	return (dest);
 }
