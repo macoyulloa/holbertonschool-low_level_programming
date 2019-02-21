@@ -24,8 +24,8 @@ char *_strncat(char *dest, char *src, int n)
 		*destino = *fuente;
 		destino++;
 		fuente++;
-		if (i < n)
-		*destino = '\0';
 	}
+	if (i < n)
+	*destino = '\0';
 	return (dest);
 }
