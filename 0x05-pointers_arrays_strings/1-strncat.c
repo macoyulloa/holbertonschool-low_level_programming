@@ -19,14 +19,12 @@ char *_strncat(char *dest, char *src, int n)
 	for (; *destino != '\0'; destino++)
 	{
 	}
-	for (i = 0; fuente[i] != '\0'; i++)
+	for (i = 0; fuente[i] != '\0' && i < n; i++)
 	{
-		if (i < n || i < '\0')
-		{
 			*destino = *fuente;
 			destino++;
 			fuente++;
-		}
 	}
+	*destino = '\0';
 	return (dest);
 }
