@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * leet - check the code for Holberton School students.
+ * rot13 - check the code for Holberton School students.
  * @s: pointer
  * Return: Always 0.
  */
