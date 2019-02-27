@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-	_print_rev_recursion("\nColton Walker");
+	_print_rev_recursion("\nhola");
 	return (0);
 }
