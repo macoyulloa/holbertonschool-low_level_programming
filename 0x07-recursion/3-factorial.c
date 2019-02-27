@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _strlen_recursion - it is a funtion to print
- * @s: pointer
+ * factorial - it is a funtion to print
+ * @n: pointer
  * Return: dependes on the recusion case
  */
 int factorial(int n)
