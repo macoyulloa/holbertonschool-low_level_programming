@@ -26,7 +26,7 @@ int palindrome_com(char *s, int size, int i)
 	if (i >= size)
 		return (1);
 	else if (s[i] == s[size])
-		return (palindrome_com(s, size - 1, i + 1)); 
+		return (palindrome_com(s, size - 1, i + 1));
 	return (0);
 }
 /**
