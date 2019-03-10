@@ -43,5 +43,17 @@ int main(void)
     a = array_range(0, 10);
     simple_print_buffer(a, 11);
     free(a);
+
+    a = array_range(5, 20);
+    simple_print_buffer(a, 11);
+    free(a);
+
+    a = array_range(-10, -2);
+    simple_print_buffer(a, 11);
+    free(a);
+
+    a = array_range(4, 7);
+    simple_print_buffer(a, 11);
+    free(a);
     return (0);
 }
