@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * init_dog - structure.
@@ -10,7 +11,16 @@
 **/
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	(*d).name = name;
-	(*d).age = age;
-	(*d).owner = owner;
+	if (d != NULL)
+	{
+	if (name != NULL)
+		(*d).name = name;
+	if (age != age)
+	{
+	}
+	else
+		(*d).age = age;
+	if (owner != NULL)
+		(*d).owner = owner;
+	}
 }
