@@ -11,7 +11,7 @@ void main(int argc, char *argv[])
 {
 	int x = atoi(argv[1]);
 
-	if (x < 0)
+	if (x <= 0)
 	{
 		printf("Error\n");
 		exit(2);
