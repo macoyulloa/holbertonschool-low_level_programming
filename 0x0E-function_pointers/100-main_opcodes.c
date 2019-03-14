@@ -7,7 +7,7 @@
  * @argv: input
  * Return: nothing.
 **/
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
 	if (atoi(argv[1]) <= 0)
 	{
@@ -19,5 +19,4 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-	return (0);
 }
