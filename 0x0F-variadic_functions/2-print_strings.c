@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			p = va_arg(letras, char *);
 			if (p == NULL)
-				printf("%s", separator);
+				printf("(nil)");
 			printf("%s", p);
 		}
 	}
@@ -31,7 +31,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			p = va_arg(letras, char *);
 			if (p == NULL)
-				printf("%s", separator);
+				printf("(nil)");
 			else if (count < (n - 1))
 				printf("%s%s", p, separator);
 			else
