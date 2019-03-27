@@ -2,8 +2,8 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - function to prints a linked list.
- * @head: linked list.
+ * free_listint_safe - function to prints a linked list.
+ * @h: linked list.
  * Return: pointer listint_t.
  */
 size_t free_listint_safe(listint_t **h)
