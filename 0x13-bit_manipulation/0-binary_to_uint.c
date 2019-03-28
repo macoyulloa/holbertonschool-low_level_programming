@@ -20,12 +20,12 @@ unsigned int myAtoi(const char *str)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = myAtoi(b);
-	unsigned int last_digit = 0;
+	unsigned int last_digit = 0, n;
 	unsigned int dec_value = 0, base = 1;
 
 	if (b == NULL)
 		return (0);
+	n = myAtoi(b);
 	while (n)
 	{
 		last_digit = n % 10;
