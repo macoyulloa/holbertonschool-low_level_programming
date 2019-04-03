@@ -11,7 +11,9 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		file = open(av[1], O_RDONLY)
+		file = open(av[1], O_RDONLY);
+		if (file == -1)
+			return (-1);
 	}
 	return (1);
 }
