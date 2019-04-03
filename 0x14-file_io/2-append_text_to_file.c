@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * create_file - read a file.
+ * append_text_to_file - read a file.
  * @filename: name of the file
  * @text_content: content to the file.
  * Return: 1 on success.
