@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "sort.h"
 
 /**
@@ -26,22 +25,39 @@ return (min_index);
 }
 
 /**
- *  selection_sort - sorts a list, begining with the min value
- *
+ * swap - swap elements at the given index values
+ * @array: the list
+ * @first_index: first_index
+ * @second_index: second_index
+ * Return: int
+ */
+int swap(int *array, unsigned int first_index, unsigned int second_index)
+{
+unsigned int temp;
+
+temp = array[first_index];
+array[first_index] = array[second_index];
+array[second_index] = temp;
+return (1);
+}
+
+/**
+ *  selection_sort - sorts a list, begining with the min value 
  *  @array: the list
  *  @size: size of the list
  *  Return: none
  */
 void selection_sort(int *array, size_t size)
 {
-unsigned int i, temp, index;
+unsigned int i, index;
 
 for (i = 0; i < size; i++)
 {
 index = index_min(array, i, size);
-temp = array[i];
-array[i] = array[index];
-array[index] = temp;
+if (array[i] > array[index])
+{
+swap(array, i, index);
 print_array(array, size);
+}
 }
 }
