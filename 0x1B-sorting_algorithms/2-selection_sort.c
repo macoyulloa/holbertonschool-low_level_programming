@@ -42,7 +42,7 @@ return (1);
 }
 
 /**
- *  selection_sort - sorts a list, begining with the min value 
+ *  selection_sort - sorts a list, begining with the min value
  *  @array: the list
  *  @size: size of the list
  *  Return: none
