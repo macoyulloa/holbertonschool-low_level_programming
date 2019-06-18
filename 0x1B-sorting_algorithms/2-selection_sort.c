@@ -31,14 +31,13 @@ return (min_index);
  * @second_index: second_index
  * Return: int
  */
-int swap(int *array, unsigned int first_index, unsigned int second_index)
+void swap(int *array, unsigned int first_index, unsigned int second_index)
 {
 unsigned int temp;
 
 temp = array[first_index];
 array[first_index] = array[second_index];
 array[second_index] = temp;
-return (1);
 }
 
 /**
