@@ -18,7 +18,14 @@ while (insert)
 {
 while (insert->prev && insert->n < insert->prev->n)
 {
-insert = insert->next;
+insert->prev->next = insert->next;
+if (insert->next)
+insert->next->prev = insert->prev;
+insert->next = insert->prev;
+insert->prev = insert->prev->prev;
+insert->next->prev = insert;
+print_list(*list);
 }
+insert = insert->next;
 }
 }
